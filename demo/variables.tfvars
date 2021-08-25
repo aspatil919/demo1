@@ -1,6 +1,6 @@
 var_location = "North Europe"
-var_RG_name = "Demover01"
-var_Storage_name = "Demostoragever01"
+var_RG_name = "demover01"
+var_Storage_name = "denostr01"
 var_account_tier = "Standard"
 var_account_replication_type = "GRS" 
 var_DEVRG_name = "demo01"
