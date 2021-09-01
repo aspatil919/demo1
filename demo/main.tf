@@ -32,12 +32,10 @@ resource "azurerm_storage_account" "STG" {
    account_tier = var.var_account_tier
    account_replication_type = var.var_account_replication_type
  }
+resource "azurerm_storage_container" "storage_container" {
+  name                  = var.var_storage_containername
+  storage_account_name  = azurerm_storage_account.var_storage_name
+  container_access_type = "private"
+}
 
 
-//module "storage_account" {
-// source = "./TF/modules"
-// var_location = var.var_location
-//  var_storage_name = var.var_Storage_name
-//  var_account_tier = var.var_account_tier
-//  var_account_replication_type = var.var_account_replication_type  
-//}
