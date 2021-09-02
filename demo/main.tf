@@ -32,7 +32,7 @@ resource "azurerm_storage_container" "storage_container" {
 }
 
 resource "azurerm_data_factory" "data_factory"{
-name ="demodatafactory1"
+name ="demodatafactory2"
 location = var.var_location
 resource_group_name = azurerm_resource_group.RG.name
 }
