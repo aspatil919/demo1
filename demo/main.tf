@@ -41,8 +41,7 @@ resource "azurerm_data_lake_store" "data_lake" {
 name ="demodatalake"
 resource_group_name =azurerm_resource_group.RG.name
 location = var.var_location
-rencryption_state = "Enabled"
-encryption_type = "ServiceManaged"
+
 }
 
 
