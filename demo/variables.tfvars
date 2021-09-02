@@ -1,6 +1,6 @@
 var_location = "North Europe"
-var_RG_name = "demo200"
-var_Storage_name = "storagev200"
+var_RG_name = "prod200"
+var_Storage_name = "storageprod200"
 var_storage_containername = "democon"
 var_account_tier = "Standard"
 var_account_replication_type = "GRS" 
