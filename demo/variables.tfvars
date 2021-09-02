@@ -8,9 +8,9 @@ var_DEVRG_storage_account_name = "demostoragev01"
 var_DEVRG_container_name = "dev01"
 var_DEVRG_key = "mainfile1.tfstate"
 var_subscription_id = "88c09e07-421a-4d88-a876-10f83569adc7"
-var_client_id = "1a85a6ed-b7f0-4dc1-8f6b-a4d53497ce91"
+var_client_id = "3bedcf03-a1c4-4b23-b8d8-4b6cb081618b"
 var_tenant_id = "9369c4c6-612c-49c1-b96e-8f1c5ad4d92d"
-var_client_secret = "EYQNx6_G5~7uvU_HX1gj3Am5ZQ2N.48tWV"
+var_client_secret = "11JiG9G_U3Y_Ta6_Q27Ap4mQenO~ZZBCi9"
 
 
 
