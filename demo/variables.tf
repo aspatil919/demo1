@@ -18,6 +18,10 @@ variable "var_account_replication_type" {
   type = string
 }
 
+variable "var_storage_containername" {
+  type = string
+}
+
 variable "var_DEVRG_name" {
   type = string
 }
