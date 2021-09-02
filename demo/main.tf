@@ -31,4 +31,18 @@ resource "azurerm_storage_container" "storage_container" {
   container_access_type = "private"
 }
 
+resource "azurerm_data_factory" "data_factory"{
+name ="demodatafactory"
+location = var.var_location
+resource_group_name = azurerm_resource_group.RG.name
+}
+
+resource "azurerm_data_lake_store" "data_lake" {
+name ="demodatalake"
+resource_group_name =azurerm_resource_group.RG.name
+location = var.var_location
+rencryption_state = "Enabled"
+encryption_type = "ServiceManaged"
+}
+
 
