@@ -9,7 +9,7 @@ terraform {
         resource_group_name = "demo001"
         storage_account_name = "stroagev100"
         container_name = "democon"
-        key = "mainfile1.tfstate"
+        key = "main.tfstate"
     }
 }
 
