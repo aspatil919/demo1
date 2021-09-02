@@ -13,7 +13,7 @@ terraform {
     }
 }
 
-resource "azurerm_resource_group" "RG" {
+resource "azurerm_resource_group" "RG1" {
     name     = var.var_RG_name
     location = var.var_location
 }
