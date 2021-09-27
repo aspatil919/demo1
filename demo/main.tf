@@ -25,23 +25,23 @@ resource "azurerm_storage_account" "STG" {
    account_tier = var.var_account_tier
    account_replication_type = var.var_account_replication_type
  }
-resource "azurerm_storage_container" "storage_container" {
-  name                  = var.var_storage_containername
-  storage_account_name  = azurerm_storage_account.STG.name
-  container_access_type = "private"
-}
+#resource "azurerm_storage_container" "storage_container" {
+#  name                  = var.var_storage_containername
+ # storage_account_name  = azurerm_storage_account.STG.name
+  #container_access_type = "private"
+#}
 
-resource "azurerm_data_factory" "data_factory"{
-name ="demodatafactoryprod1"
-location = var.var_location
-resource_group_name = azurerm_resource_group.RG.name
-}
+#resource "azurerm_data_factory" "data_factory"{
+#name ="demodatafactoryprod1"
+#location = var.var_location
+#resource_group_name = azurerm_resource_group.RG.name
+#}
 
-resource "azurerm_data_lake_store" "data_lake" {
-name ="demodatalakeprod"
-resource_group_name =azurerm_resource_group.RG.name
-location = var.var_location
+#resource "azurerm_data_lake_store" "data_lake" {
+#name ="demodatalakeprod"
+#resource_group_name =azurerm_resource_group.RG.name
+#location = var.var_location
 
-}
+#}
 
 
