@@ -1,6 +1,6 @@
 terraform {
   backend "local" {
-    path = "This PC/Downloads/terraform.tfstate"
+    path = "C:/Users/Public/Downloads/terraform.tfstate"
   }
 }
 
