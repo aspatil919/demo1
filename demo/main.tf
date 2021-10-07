@@ -23,16 +23,16 @@ resource "azurerm_resource_group" "RG" {
 }
 
 provider "azurerm" {
-  client_id         = var.client_id
-  client_secret     = var.client_secret
-  tenant_id         = var.tenant_id
-  subscription_id   = var.subscription_id
+  client_id         = var.var_client_id
+  client_secret     = var.var_client_secret
+  tenant_id         = var.var_tenant_id
+  subscription_id   = var.var_subscription_id
 }
 
 resource "azurerm_databricks_workspace" "this" {
   location                      = "centralus"
   name                          = "my-workspace-name"
-  resource_group_name           = var.resource_group
+  resource_group_name           = var.var_RG_name
   sku                           = "premium"}
 provider "databricks" {
   azure_workspace_resource_id = azurerm_databricks_workspace.this.id
