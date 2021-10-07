@@ -22,6 +22,29 @@ resource "azurerm_resource_group" "RG" {
     location = var.var_location
 }
 
+provider "azurerm" {
+  client_id         = var.client_id
+  client_secret     = var.client_secret
+  tenant_id         = var.tenant_id
+  subscription_id   = var.subscription_id
+}
+
+resource "azurerm_databricks_workspace" "this" {
+  location                      = "centralus"
+  name                          = "my-workspace-name"
+  resource_group_name           = var.resource_group
+  sku                           = "premium"}
+provider "databricks" {
+  azure_workspace_resource_id = azurerm_databricks_workspace.this.id
+  azure_client_id             = var.client_id
+  azure_client_secret         = var.client_secret
+  azure_tenant_id             = var.tenant_id
+}resource "databricks_user" "my-user" {user_name = "test-user@databricks.com"}
+
+
+
+
+
 #resource "azurerm_storage_account" "STG" {
  #  name = var.var_Storage_name
   # resource_group_name = azurerm_resource_group.RG.name
